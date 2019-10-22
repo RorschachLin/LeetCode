@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import legacy.nodes.ListNode;
+import nodes.ListNode;
 
 
 public class Add2Numbers {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import legacy.nodes.TreeNode;;
+import nodes.TreeNode;;
 
 public class BinaryTreeInorder94 {
 	// 递归

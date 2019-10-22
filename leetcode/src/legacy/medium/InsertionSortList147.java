@@ -1,6 +1,6 @@
 package legacy.medium;
 
-import legacy.nodes.ListNode;
+import nodes.ListNode;
 
 public class InsertionSortList147 {
 

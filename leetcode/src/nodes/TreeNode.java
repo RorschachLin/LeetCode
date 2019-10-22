@@ -1,4 +1,4 @@
-package legacy.nodes;
+package nodes;
 
 public class TreeNode {
 	public int val;
