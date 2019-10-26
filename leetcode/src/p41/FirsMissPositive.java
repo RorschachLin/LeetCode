@@ -4,6 +4,7 @@ public class FirsMissPositive {
 
 	public static int firstMissingPositive(int[] nums) {
 		for (int i = 0; i < nums.length; i++) {
+			// using while loop due to one swap may not be the one in correct place
 			while (nums[i] <= nums.length && nums[i] > 0 && nums[nums[i] - 1] != nums[i]) {
 				swap(nums, nums[i] - 1, i);
 			}
