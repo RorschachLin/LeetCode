@@ -11,8 +11,10 @@ public class ValidParentheses {
 		parentheseMap.put(']', '[');
 		parentheseMap.put('}', '{');
 		
+		int length = s.length();
+		if (length % 2 == 1) return false;
 		Stack<Character> stack = new Stack<Character>();
-		for (int i = 0; i < s.length(); i++) {
+		for (int i = 0; i < length; i++) {
 			char c = s.charAt(i);
 			if (parentheseMap.containsKey(c)) {
 				if (stack.isEmpty()) return false;
