@@ -354,7 +354,6 @@ public class ThreeSum {
 				9344, -92337, 26585, 70458, -52764, -67471, -68411, -1119, -2072, -93476, 67981, 40887, -89304, -12235,
 				41488, 1454, 5355, -34855, -72080, 24514, -58305, 3340, 34331, 8731, 77451, -64983, -57876, 82874,
 				62481, -32754, -39902, 22451, -79095, -23904, 78409, -7418, 77916 };
-		ThreeSum threeSum = new ThreeSum();
 		List<List<Integer>> res = ThreeSum.threeSum0(nums2);
 		for (List<Integer> list : res) {
 			for (Integer integer : list) {
