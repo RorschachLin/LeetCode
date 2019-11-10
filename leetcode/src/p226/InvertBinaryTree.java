@@ -15,6 +15,7 @@ public class InvertBinaryTree {
 		return null;
 	}
 
+	
 	public TreeNode invertTreeIterat(TreeNode root) {
 		if (root == null)
 			return null;
@@ -42,7 +43,7 @@ public class InvertBinaryTree {
 		root.left.right = new TreeNode(3);
 		root.right.left = new TreeNode(6);
 		root.right.right = new TreeNode(9);
-		TreeTraversal.postOrderTraversal(root);
+		TreeTraversal.levelTraversal(root);
 		TreeNode resultRoot = new InvertBinaryTree().invertTreeIterat(root);
 		System.out.println();
 		TreeTraversal.postOrderTraversal(resultRoot);

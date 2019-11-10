@@ -1,5 +1,6 @@
 package com.tree;
 
+import java.util.LinkedList;
 import java.util.Stack;
 
 import nodes.TreeNode;
@@ -13,12 +14,7 @@ public class TreeTraversal {
 			while(node != null) {
 				stack.push(node);
 				node = node.left;
-				
 			}
-//			for(TreeNode tn : stack) {
-//				System.out.println(tn.val);
-//			}
-//			System.out.println("---------------");
 			node = stack.peek();
 			if(node.right == null || node.right == lastVisit) {
 				System.out.print(node.val + " ");
@@ -27,6 +23,19 @@ public class TreeTraversal {
 				node = null;
 			} else {
 				node = node.right;
+			}
+		}
+	}
+	
+	public static void levelTraversal(TreeNode root) {
+		LinkedList<TreeNode> queue = new LinkedList<>();
+		queue.addLast(root);
+		while(!queue.isEmpty()) {
+			TreeNode curr = queue.removeFirst();
+			if(curr != null) {
+				System.out.print(curr.val + " ");
+				queue.addLast(curr.left);
+				queue.addLast(curr.right);
 			}
 		}
 	}
